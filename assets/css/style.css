@@ -1,16 +1,48 @@
-/* Custom styles for StyleHaven */
+/* Custom styles for ALiza Store */
 
 /* Global Styles */
 :root {
-    --primary-color: #6f42c1;
-    --secondary-color: #fd7e14;
-    --success-color: #198754;
-    --info-color: #0dcaf0;
-    --warning-color: #ffc107;
-    --danger-color: #dc3545;
-    --light-color: #f8f9fa;
-    --dark-color: #212529;
+    /* ALiza Store Brand Colors */
+    --primary-color: #8B5CF6;
+    --primary-dark: #7C3AED;
+    --secondary-color: #F59E0B;
+    --accent-color: #EC4899;
+    --success-color: #10B981;
+    --warning-color: #F59E0B;
+    --danger-color: #EF4444;
+    --info-color: #3B82F6;
+    
+    /* Light Theme */
+    --bg-color: #FFFFFF;
+    --bg-secondary: #F8FAFC;
+    --bg-tertiary: #F1F5F9;
+    --text-color: #1E293B;
+    --text-secondary: #64748B;
+    --text-muted: #94A3B8;
+    --border-color: #E2E8F0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --navbar-bg: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --footer-bg: #1E293B;
+    --footer-text: #F8FAFC;
+    
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #0F172A;
+    --bg-secondary: #1E293B;
+    --bg-tertiary: #334155;
+    --text-color: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --navbar-bg: #1E293B;
+    --card-bg: #1E293B;
+    --footer-bg: #0F172A;
+    --footer-text: #F8FAFC;
 }
 
 * {
@@ -19,7 +51,9 @@
 
 body {
     line-height: 1.6;
-    color: var(--dark-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Animation Classes */
@@ -73,17 +107,60 @@ body {
     }
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
 /* Navigation */
 .navbar {
+    background-color: var(--navbar-bg) !important;
+    border-bottom: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
 .navbar-brand {
     transition: color 0.3s ease;
+    color: var(--primary-color) !important;
 }
 
 .navbar-brand:hover {
     color: var(--secondary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.dropdown-menu {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--primary-color);
 }
 
 .search-container {
@@ -98,7 +175,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #0d6efd 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -115,22 +192,24 @@ body {
 /* Product Cards */
 .product-card {
     transition: all 0.3s ease;
-    border: none;
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     overflow: hidden;
     height: 100%;
+    background-color: var(--card-bg);
 }
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px var(--shadow-color);
+    border-color: var(--primary-color);
 }
 
 .product-image {
     position: relative;
     overflow: hidden;
     height: 250px;
-    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    background: linear-gradient(45deg, var(--bg-secondary), var(--bg-tertiary));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,6 +267,24 @@ body {
     color: #ffc107;
 }
 
+/* Form Controls */
+.form-control, .form-select {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
 /* Buttons */
 .btn {
     transition: all 0.3s ease;
@@ -200,18 +297,61 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, var(--primary-color), #0d6efd);
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
     border: none;
+    color: white;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(45deg, #5a359a, #0b5ed7);
-    box-shadow: 0 8px 25px rgba(111, 66, 193, 0.3);
+    background: linear-gradient(45deg, var(--primary-dark), #6D28D9);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-outline-secondary {
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+    background-color: var(--card-bg);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Cards and Sections */
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.card-body {
+    color: var(--text-color);
+}
+
+.card-title {
+    color: var(--text-color);
+}
+
+.bg-light {
+    background-color: var(--bg-secondary) !important;
 }
 
 /* Filters */
 .filter-section {
-    background: #f8f9fa;
+    background: var(--bg-secondary);
     border-radius: 10px;
     padding: 20px;
 }
@@ -381,6 +521,20 @@ body {
 /* Footer */
 footer {
     margin-top: auto;
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+}
+
+footer .text-light {
+    color: var(--footer-text) !important;
+}
+
+footer a {
+    color: var(--footer-text) !important;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
 }
 
 .social-links a {

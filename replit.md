@@ -1,8 +1,8 @@
-# StyleHaven E-commerce Platform
+# ALiza Store E-commerce Platform
 
 ## Overview
 
-StyleHaven is a modern e-commerce platform for fashion and lifestyle products. It's built as a static web application using vanilla HTML, CSS, and JavaScript with a focus on responsive design and user experience. The platform features a complete shopping experience including product browsing, cart management, and checkout functionality.
+ALiza Store is a modern e-commerce platform for fashion and lifestyle products. It's built as a static web application using vanilla HTML, CSS, and JavaScript with a focus on responsive design and user experience. The platform features a complete shopping experience including product browsing, cart management, checkout functionality, and a dynamic dark/light theme system.
 
 ## System Architecture
 
@@ -15,12 +15,18 @@ StyleHaven is a modern e-commerce platform for fashion and lifestyle products. I
 
 ### Technology Stack
 - HTML5 for structure
-- CSS3 with custom variables and animations
-- Vanilla JavaScript for interactivity
+- CSS3 with custom CSS variables and theme system
+- Vanilla JavaScript for interactivity and theme management
 - Bootstrap 5 for responsive components
 - Tailwind CSS for utility-first styling
 - Font Awesome for icons
 - Python HTTP server for local development
+
+### Theme System
+- **Dual Theme Support**: Light and dark mode with seamless switching
+- **ALiza Store Brand Colors**: Purple (#8B5CF6) primary, amber (#F59E0B) secondary, pink (#EC4899) accent
+- **Theme Persistence**: User preferences saved in localStorage
+- **Dynamic UI Updates**: All components adapt to theme changes in real-time
 
 ## Key Components
 
@@ -38,7 +44,7 @@ StyleHaven is a modern e-commerce platform for fashion and lifestyle products. I
 
 ### Data Layer
 - **products.json**: Static product database with complete product information
-- **localStorage**: Client-side cart and user preferences storage
+- **localStorage**: Client-side cart, user preferences, and theme storage (alizastore_* keys)
 
 ### Styling
 - **style.css**: Custom CSS with CSS variables, animations, and component styles
@@ -85,7 +91,8 @@ StyleHaven is a modern e-commerce platform for fashion and lifestyle products. I
 
 ```
 Changelog:
-- June 22, 2025. Initial setup
+- June 22, 2025: Initial setup
+- June 22, 2025: Rebranded to ALiza Store with dark/light theme system
 ```
 
 ## User Preferences

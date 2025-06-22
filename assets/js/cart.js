@@ -123,7 +123,7 @@ function applyPromoCode() {
         const promo = promoCodes[promoCode];
         
         // Store applied promo code
-        localStorage.setItem('stylehaven_promo', JSON.stringify(promo));
+        localStorage.setItem('alizastore_promo', JSON.stringify(promo));
         
         showNotification(`Promo code applied: ${promo.description}`, 'success');
         promoInput.value = '';
@@ -142,7 +142,7 @@ function calculateCartTotalWithPromo() {
     let shipping = subtotal > 50 ? 0 : 9.99;
     
     // Apply promo code if exists
-    const storedPromo = localStorage.getItem('stylehaven_promo');
+    const storedPromo = localStorage.getItem('alizastore_promo');
     if (storedPromo) {
         const promo = JSON.parse(storedPromo);
         
@@ -257,13 +257,13 @@ function handleCheckoutSubmit(event) {
     // Simulate order processing
     setTimeout(() => {
         // Generate order ID
-        const orderId = `SH-${new Date().getFullYear()}-${String(Date.now()).slice(-6)}`;
+        const orderId = `AL-${new Date().getFullYear()}-${String(Date.now()).slice(-6)}`;
         document.getElementById('orderId').textContent = `#${orderId}`;
         
         // Clear cart
         cart = [];
-        localStorage.removeItem('stylehaven_cart');
-        localStorage.removeItem('stylehaven_promo');
+        localStorage.removeItem('alizastore_cart');
+        localStorage.removeItem('alizastore_promo');
         updateCartCount();
         
         // Show success modal

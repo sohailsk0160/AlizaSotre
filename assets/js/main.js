@@ -1,11 +1,12 @@
-// Main JavaScript functionality for StyleHaven
+// Main JavaScript functionality for ALiza Store
 
 // Global variables
 let products = [];
-let cart = JSON.parse(localStorage.getItem('stylehaven_cart')) || [];
+let cart = JSON.parse(localStorage.getItem('alizastore_cart')) || [];
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
+    initializeTheme();
     loadProducts();
     setupEventListeners();
     updateCartCount();
@@ -139,6 +140,29 @@ function getFallbackProducts() {
             inStock: true
         }
     ];
+}
+
+// Theme Management
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('alizastore_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('alizastore_theme', newTheme);
+    updateThemeIcon(newTheme);
+}
+
+function updateThemeIcon(theme) {
+    const themeIcon = document.getElementById('themeIcon');
+    if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
 }
 
 // Setup event listeners
@@ -313,7 +337,7 @@ function addToCart(productId, quantity = 1, selectedSize = null, selectedColor =
         });
     }
     
-    localStorage.setItem('stylehaven_cart', JSON.stringify(cart));
+    localStorage.setItem('alizastore_cart', JSON.stringify(cart));
     updateCartCount();
     showNotification('Product added to cart!', 'success');
 }
@@ -325,7 +349,7 @@ function removeFromCart(productId, selectedSize = null, selectedColor = null) {
           item.selectedSize === selectedSize && 
           item.selectedColor === selectedColor)
     );
-    localStorage.setItem('stylehaven_cart', JSON.stringify(cart));
+    localStorage.setItem('alizastore_cart', JSON.stringify(cart));
     updateCartCount();
     showNotification('Product removed from cart!', 'info');
 }
@@ -343,7 +367,7 @@ function updateCartQuantity(productId, quantity, selectedSize = null, selectedCo
             removeFromCart(productId, selectedSize, selectedColor);
         } else {
             item.quantity = quantity;
-            localStorage.setItem('stylehaven_cart', JSON.stringify(cart));
+            localStorage.setItem('alizastore_cart', JSON.stringify(cart));
             updateCartCount();
         }
     }
@@ -376,7 +400,7 @@ function calculateCartTotal() {
 
 // Toggle wishlist
 function toggleWishlist(productId) {
-    let wishlist = JSON.parse(localStorage.getItem('stylehaven_wishlist')) || [];
+    let wishlist = JSON.parse(localStorage.getItem('alizastore_wishlist')) || [];
     const index = wishlist.indexOf(productId);
     
     if (index > -1) {
@@ -387,8 +411,11 @@ function toggleWishlist(productId) {
         showNotification('Added to wishlist!', 'success');
     }
     
-    localStorage.setItem('stylehaven_wishlist', JSON.stringify(wishlist));
+    localStorage.setItem('alizastore_wishlist', JSON.stringify(wishlist));
 }
+
+// Make theme toggle globally accessible
+window.toggleTheme = toggleTheme;
 
 // Quick view product
 function quickView(productId) {
