@@ -1,0 +1,40 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="canvasGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#556B2F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F3F1A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leatherGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D2F0A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main backpack body -->
+  <path d="M90 120 L210 120 L205 250 L95 250 Z" fill="url(#canvasGradient)" stroke="#2F3F1A" stroke-width="2"/>
+  
+  <!-- Top flap -->
+  <path d="M85 120 Q150 100 215 120 L215 150 L85 150 Z" fill="#2F3F1A" stroke="#1A2510" stroke-width="1"/>
+  
+  <!-- Drawstring opening -->
+  <ellipse cx="150" cy="120" rx="65" ry="6" fill="#1A2510"/>
+  
+  <!-- Leather trim -->
+  <rect x="85" y="115" width="130" height="8" fill="url(#leatherGradient)"/>
+  <rect x="85" y="245" width="130" height="8" fill="url(#leatherGradient)"/>
+  
+  <!-- Straps -->
+  <rect x="110" y="100" width="12" height="160" fill="url(#leatherGradient)" rx="6"/>
+  <rect x="178" y="100" width="12" height="160" fill="url(#leatherGradient)" rx="6"/>
+  
+  <!-- Front pocket -->
+  <rect x="110" y="160" width="80" height="60" rx="8" fill="#2F3F1A" stroke="#1A2510" stroke-width="1"/>
+  <circle cx="150" cy="190" r="3" fill="#C0C0C0"/>
+  
+  <!-- Buckles -->
+  <rect x="105" y="140" width="12" height="8" fill="#C0C0C0" rx="1"/>
+  <rect x="183" y="140" width="12" height="8" fill="#C0C0C0" rx="1"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="270" rx="60" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

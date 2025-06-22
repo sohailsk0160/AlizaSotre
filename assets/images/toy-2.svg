@@ -1,0 +1,61 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bellyGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEB887;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <circle cx="125" cy="70" r="18" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  <circle cx="175" cy="70" r="18" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  <circle cx="125" cy="70" r="10" fill="#8B7355"/>
+  <circle cx="175" cy="70" r="10" fill="#8B7355"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="90" r="6" fill="#000000"/>
+  <circle cx="165" cy="90" r="6" fill="#000000"/>
+  <circle cx="137" cy="88" r="2" fill="#FFFFFF"/>
+  <circle cx="167" cy="88" r="2" fill="#FFFFFF"/>
+  
+  <!-- Nose -->
+  <ellipse cx="150" cy="105" rx="4" ry="3" fill="#000000"/>
+  
+  <!-- Mouth -->
+  <path d="M145 115 Q150 120 155 115" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <ellipse cx="150" cy="180" rx="55" ry="65" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Belly -->
+  <ellipse cx="150" cy="185" rx="35" ry="45" fill="url(#bellyGradient)"/>
+  
+  <!-- Arms -->
+  <circle cx="100" cy="160" r="25" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  <circle cx="200" cy="160" r="25" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Legs -->
+  <circle cx="125" cy="235" r="22" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  <circle cx="175" cy="235" r="22" fill="url(#bearGradient)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Paws -->
+  <circle cx="85" cy="175" r="8" fill="#8B7355"/>
+  <circle cx="215" cy="175" r="8" fill="#8B7355"/>
+  <circle cx="125" cy="255" r="8" fill="#8B7355"/>
+  <circle cx="175" cy="255" r="8" fill="#8B7355"/>
+  
+  <!-- Bow tie -->
+  <polygon points="135,130 165,130 155,140 145,140" fill="#DC143C"/>
+  <polygon points="140,135 160,135 150,145" fill="#8B0000"/>
+  <circle cx="150" cy="135" r="3" fill="#FFD700"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="280" rx="80" ry="10" fill="#000000" opacity="0.2"/>
+</svg>

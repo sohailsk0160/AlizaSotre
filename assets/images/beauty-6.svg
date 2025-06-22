@@ -1,0 +1,39 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mascaraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Mascara tube -->
+  <rect x="90" y="80" width="25" height="120" rx="3" fill="url(#mascaraGradient)" stroke="#555" stroke-width="1"/>
+  
+  <!-- Mascara cap -->
+  <rect x="88" y="60" width="29" height="25" rx="4" fill="#000000" stroke="#333" stroke-width="1"/>
+  
+  <!-- Mascara wand -->
+  <rect x="99" y="45" width="7" height="20" rx="3" fill="#8B4513"/>
+  <rect x="101" y="25" width="3" height="25" fill="#654321"/>
+  
+  <!-- Eyeliner -->
+  <rect x="170" y="80" width="20" height="120" rx="2" fill="url(#mascaraGradient)" stroke="#555" stroke-width="1"/>
+  
+  <!-- Eyeliner tip -->
+  <polygon points="180,75 175,80 185,80" fill="#000000"/>
+  
+  <!-- Packaging box -->
+  <rect x="60" y="220" width="180" height="40" rx="5" fill="#1a1a1a" stroke="#333" stroke-width="2"/>
+  <rect x="65" y="225" width="170" height="30" rx="3" fill="#000" opacity="0.8"/>
+  
+  <!-- Product labels -->
+  <text x="102" y="150" text-anchor="middle" font-family="Arial" font-size="6" fill="#FFFFFF" transform="rotate(-90 102 150)">MASCARA</text>
+  <text x="180" y="150" text-anchor="middle" font-family="Arial" font-size="6" fill="#FFFFFF" transform="rotate(-90 180 150)">LINER</text>
+  
+  <!-- Box text -->
+  <text x="150" y="240" text-anchor="middle" font-family="serif" font-size="10" fill="#FFFFFF">WATERPROOF DUO</text>
+  <text x="150" y="252" text-anchor="middle" font-family="Arial" font-size="8" fill="#C0C0C0">Long-Lasting Formula</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="280" rx="90" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

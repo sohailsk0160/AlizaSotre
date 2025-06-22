@@ -1,0 +1,38 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="serumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F8FF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bottle body -->
+  <rect x="120" y="120" width="60" height="140" rx="8" fill="url(#bottleGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  
+  <!-- Serum liquid -->
+  <rect x="125" y="140" width="50" height="115" rx="5" fill="url(#serumGradient)" opacity="0.8"/>
+  
+  <!-- Dropper cap -->
+  <rect x="130" y="100" width="40" height="25" rx="3" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="1"/>
+  
+  <!-- Dropper button -->
+  <circle cx="150" cy="107" r="6" fill="#696969"/>
+  
+  <!-- Label area -->
+  <rect x="125" y="180" width="50" height="40" fill="#FFFFFF" opacity="0.9"/>
+  <text x="150" y="195" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">HYDRA</text>
+  <text x="150" y="205" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">SERUM</text>
+  <text x="150" y="215" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">30ml</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="140" cy="150" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="160" cy="160" r="1.5" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="145" cy="170" r="1" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="280" rx="30" ry="6" fill="#000000" opacity="0.2"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="creamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6E6E6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="jarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Jar base -->
+  <ellipse cx="150" cy="220" rx="70" ry="15" fill="url(#jarGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  <rect x="80" y="140" width="140" height="80" fill="url(#jarGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  
+  <!-- Cream inside -->
+  <ellipse cx="150" cy="145" rx="65" ry="12" fill="url(#creamGradient)"/>
+  <rect x="85" y="145" width="130" height="70" fill="url(#creamGradient)"/>
+  
+  <!-- Lid -->
+  <ellipse cx="150" cy="125" rx="75" ry="18" fill="#E6E6E6" stroke="#D3D3D3" stroke-width="2"/>
+  <ellipse cx="150" cy="120" rx="70" ry="15" fill="#F5F5F5" stroke="#D3D3D3" stroke-width="1"/>
+  
+  <!-- Lid details -->
+  <ellipse cx="150" cy="118" rx="50" ry="10" fill="#FFFFFF" opacity="0.8"/>
+  <text x="150" y="115" text-anchor="middle" font-family="serif" font-size="10" fill="#333">ANTI-AGING</text>
+  <text x="150" y="125" text-anchor="middle" font-family="serif" font-size="8" fill="#666">Night Cream</text>
+  
+  <!-- Brand logo -->
+  <circle cx="150" cy="180" r="20" fill="#FFFFFF" opacity="0.9"/>
+  <text x="150" y="185" text-anchor="middle" font-family="serif" font-size="12" fill="#8B5CF6">AL</text>
+  
+  <!-- Luxury details -->
+  <rect x="90" y="200" width="120" height="15" fill="#FFFFFF" opacity="0.8"/>
+  <text x="150" y="210" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">PREMIUM FORMULA</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="250" rx="75" ry="10" fill="#000000" opacity="0.2"/>
+</svg>

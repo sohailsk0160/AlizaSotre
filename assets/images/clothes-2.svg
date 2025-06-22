@@ -1,0 +1,70 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="denimGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#191970;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Jacket body -->
+  <rect x="80" y="120" width="140" height="120" rx="8" fill="url(#denimGradient)" stroke="#000080" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <rect x="50" y="120" width="35" height="100" rx="6" fill="url(#denimGradient)" stroke="#000080" stroke-width="2"/>
+  <rect x="215" y="120" width="35" height="100" rx="6" fill="url(#denimGradient)" stroke="#000080" stroke-width="2"/>
+  
+  <!-- Collar -->
+  <path d="M80 120 L90 110 L150 110 L150 105 L150 110 L210 110 L220 120" fill="url(#denimGradient)" stroke="#000080" stroke-width="2"/>
+  
+  <!-- Lapels -->
+  <path d="M80 120 L90 110 L100 130 L80 140" fill="#000080" stroke="#000040" stroke-width="1"/>
+  <path d="M220 120 L210 110 L200 130 L220 140" fill="#000080" stroke="#000040" stroke-width="1"/>
+  
+  <!-- Button placket -->
+  <rect x="145" y="120" width="10" height="120" fill="#000080"/>
+  
+  <!-- Buttons -->
+  <circle cx="150" cy="140" r="4" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="150" cy="170" r="4" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="150" cy="200" r="4" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="150" cy="230" r="4" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Chest pockets -->
+  <rect x="100" y="140" width="25" height="20" rx="2" fill="none" stroke="#000080" stroke-width="2"/>
+  <rect x="175" y="140" width="25" height="20" rx="2" fill="none" stroke="#000080" stroke-width="2"/>
+  
+  <!-- Pocket flaps -->
+  <rect x="100" y="135" width="25" height="8" rx="2" fill="#000080" stroke="#000040" stroke-width="1"/>
+  <rect x="175" y="135" width="25" height="8" rx="2" fill="#000080" stroke="#000040" stroke-width="1"/>
+  
+  <!-- Pocket buttons -->
+  <circle cx="112" cy="139" r="2" fill="#C0C0C0"/>
+  <circle cx="187" cy="139" r="2" fill="#C0C0C0"/>
+  
+  <!-- Stitching details -->
+  <line x1="85" y1="125" x2="85" y2="235" stroke="#87CEEB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="215" y1="125" x2="215" y2="235" stroke="#87CEEB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="55" y1="125" x2="55" y2="215" stroke="#87CEEB" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="245" y1="125" x2="245" y2="215" stroke="#87CEEB" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Cuffs -->
+  <rect x="50" y="210" width="35" height="10" fill="#000080" stroke="#000040" stroke-width="1"/>
+  <rect x="215" y="210" width="35" height="10" fill="#000080" stroke="#000040" stroke-width="1"/>
+  
+  <!-- Cuff buttons -->
+  <circle cx="60" cy="215" r="2" fill="#C0C0C0"/>
+  <circle cx="70" cy="215" r="2" fill="#C0C0C0"/>
+  <circle cx="225" cy="215" r="2" fill="#C0C0C0"/>
+  <circle cx="235" cy="215" r="2" fill="#C0C0C0"/>
+  
+  <!-- Denim texture -->
+  <line x1="90" y1="130" x2="210" y2="130" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="90" y1="150" x2="210" y2="150" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="90" y1="170" x2="210" y2="170" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="90" y1="190" x2="210" y2="190" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="90" y1="210" x2="210" y2="210" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="90" y1="230" x2="210" y2="230" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="260" rx="75" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

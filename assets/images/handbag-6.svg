@@ -1,0 +1,36 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bucketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D2F0A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main bucket bag body -->
+  <path d="M80 140 L220 140 L210 240 L90 240 Z" fill="url(#bucketGradient)" stroke="#3E2723" stroke-width="2"/>
+  
+  <!-- Top opening -->
+  <ellipse cx="150" cy="140" rx="70" ry="8" fill="#3E2723"/>
+  
+  <!-- Drawstring -->
+  <path d="M90 145 Q110 135 130 145 Q150 135 170 145 Q190 135 210 145" fill="none" stroke="#654321" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Drawstring ends -->
+  <circle cx="90" cy="145" r="3" fill="#654321"/>
+  <circle cx="210" cy="145" r="3" fill="#654321"/>
+  
+  <!-- Shoulder strap -->
+  <path d="M85 160 Q50 120 70 90 Q120 70 180 90 Q230 120 215 160" fill="none" stroke="#3E2723" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Hardware -->
+  <rect x="80" y="155" width="6" height="6" fill="#C0C0C0" rx="1"/>
+  <rect x="214" y="155" width="6" height="6" fill="#C0C0C0" rx="1"/>
+  
+  <!-- Leather texture lines -->
+  <line x1="85" y1="160" x2="85" y2="235" stroke="#3E2723" stroke-width="1" opacity="0.5"/>
+  <line x1="150" y1="145" x2="150" y2="235" stroke="#3E2723" stroke-width="1" opacity="0.5"/>
+  <line x1="215" y1="160" x2="215" y2="235" stroke="#3E2723" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="260" rx="65" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

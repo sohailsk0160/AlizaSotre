@@ -1,0 +1,69 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Puzzle base -->
+  <rect x="50" y="50" width="200" height="200" rx="10" fill="url(#woodGradient)" stroke="#654321" stroke-width="3"/>
+  
+  <!-- Wood grain lines -->
+  <line x1="55" y1="70" x2="245" y2="70" stroke="#8B7355" stroke-width="1" opacity="0.5"/>
+  <line x1="55" y1="120" x2="245" y2="120" stroke="#8B7355" stroke-width="1" opacity="0.5"/>
+  <line x1="55" y1="170" x2="245" y2="170" stroke="#8B7355" stroke-width="1" opacity="0.5"/>
+  <line x1="55" y1="220" x2="245" y2="220" stroke="#8B7355" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Puzzle piece 1 - Lion -->
+  <path d="M60 60 L140 60 Q145 65 140 70 L60 70 Q55 65 60 60" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+  <circle cx="90" cy="65" r="3" fill="#FF4500"/>
+  <circle cx="110" cy="65" r="3" fill="#FF4500"/>
+  <path d="M95 70 Q100 75 105 70" fill="none" stroke="#FF4500" stroke-width="2"/>
+  
+  <!-- Puzzle piece 2 - Elephant -->
+  <path d="M150 60 L230 60 Q235 65 230 70 L150 70 Q145 65 150 60" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="2"/>
+  <circle cx="180" cy="65" r="3" fill="#696969"/>
+  <circle cx="200" cy="65" r="3" fill="#696969"/>
+  <path d="M190 70 Q190 80 185 75" fill="none" stroke="#696969" stroke-width="3"/>
+  
+  <!-- Puzzle piece 3 - Giraffe -->
+  <path d="M60 80 L140 80 Q145 85 140 90 L60 90 Q55 85 60 80" fill="#FFFF99" stroke="#DAA520" stroke-width="2"/>
+  <circle cx="90" cy="85" r="3" fill="#8B4513"/>
+  <circle cx="110" cy="85" r="3" fill="#8B4513"/>
+  <rect x="95" y="75" width="10" height="8" fill="#FFFF99"/>
+  
+  <!-- Puzzle piece 4 - Monkey -->
+  <path d="M150 80 L230 80 Q235 85 230 90 L150 90 Q145 85 150 80" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <circle cx="180" cy="85" r="3" fill="#000000"/>
+  <circle cx="200" cy="85" r="3" fill="#000000"/>
+  <path d="M185 90 Q190 95 195 90" fill="none" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Puzzle piece 5 - Bear -->
+  <path d="M60 100 L140 100 Q145 105 140 110 L60 110 Q55 105 60 100" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <circle cx="90" cy="105" r="3" fill="#000000"/>
+  <circle cx="110" cy="105" r="3" fill="#000000"/>
+  <circle cx="85" cy="100" r="2" fill="#8B4513"/>
+  <circle cx="115" cy="100" r="2" fill="#8B4513"/>
+  
+  <!-- Puzzle piece 6 - Zebra -->
+  <path d="M150 100 L230 100 Q235 105 230 110 L150 110 Q145 105 150 100" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <line x1="155" y1="102" x2="225" y2="102" stroke="#000000" stroke-width="2"/>
+  <line x1="155" y1="106" x2="225" y2="106" stroke="#000000" stroke-width="2"/>
+  <circle cx="180" cy="105" r="3" fill="#000000"/>
+  <circle cx="200" cy="105" r="3" fill="#000000"/>
+  
+  <!-- Puzzle piece outlines for empty slots -->
+  <path d="M60 120 L140 120 Q145 125 140 130 L60 130 Q55 125 60 120" fill="none" stroke="#654321" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M150 120 L230 120 Q235 125 230 130 L150 130 Q145 125 150 120" fill="none" stroke="#654321" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Scattered loose pieces -->
+  <path d="M60 180 L100 180 Q105 185 100 190 L60 190 Q55 185 60 180" fill="#FF6347" stroke="#DC143C" stroke-width="2"/>
+  <circle cx="80" cy="185" r="2" fill="#FFFFFF"/>
+  
+  <path d="M180 200 L220 200 Q225 205 220 210 L180 210 Q175 205 180 200" fill="#32CD32" stroke="#228B22" stroke-width="2"/>
+  <circle cx="200" cy="205" r="2" fill="#FFFFFF"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="270" rx="100" ry="10" fill="#000000" opacity="0.2"/>
+</svg>

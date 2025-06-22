@@ -1,0 +1,49 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paletteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2F2F2F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Palette case -->
+  <rect x="50" y="100" width="200" height="120" rx="8" fill="url(#paletteGradient)" stroke="#444" stroke-width="2"/>
+  
+  <!-- Interior -->
+  <rect x="55" y="105" width="190" height="110" rx="6" fill="#000" opacity="0.8"/>
+  
+  <!-- Mirror -->
+  <rect x="60" y="110" width="180" height="40" rx="4" fill="#C0C0C0" opacity="0.9"/>
+  <rect x="65" y="115" width="170" height="30" rx="3" fill="#F5F5F5" opacity="0.8"/>
+  
+  <!-- Eyeshadow wells (4x3 grid) -->
+  <!-- Row 1 -->
+  <circle cx="80" cy="175" r="12" fill="#8B4513"/>
+  <circle cx="110" cy="175" r="12" fill="#FFD700"/>
+  <circle cx="140" cy="175" r="12" fill="#800080"/>
+  <circle cx="170" cy="175" r="12" fill="#000000"/>
+  
+  <!-- Row 2 -->
+  <circle cx="80" cy="200" r="12" fill="#DC143C"/>
+  <circle cx="110" cy="200" r="12" fill="#FF69B4"/>
+  <circle cx="140" cy="200" r="12" fill="#4169E1"/>
+  <circle cx="170" cy="200" r="12" fill="#228B22"/>
+  
+  <!-- Row 3 -->
+  <circle cx="95" cy="225" r="12" fill="#F5F5DC"/>
+  <circle cx="125" cy="225" r="12" fill="#C0C0C0"/>
+  <circle cx="155" cy="225" r="12" fill="#8B0000"/>
+  <circle cx="185" cy="225" r="12" fill="#2F4F4F"/>
+  
+  <!-- Applicator brushes -->
+  <rect x="200" y="170" width="25" height="3" rx="1" fill="#8B4513"/>
+  <rect x="200" y="180" width="25" height="3" rx="1" fill="#8B4513"/>
+  <circle cx="228" cy="172" r="2" fill="#F5F5DC"/>
+  <circle cx="228" cy="182" r="2" fill="#F5F5DC"/>
+  
+  <!-- Brand name -->
+  <text x="150" y="240" text-anchor="middle" font-family="serif" font-size="10" fill="#FFD700">PROFESSIONAL</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="240" rx="100" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

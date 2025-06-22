@@ -1,0 +1,44 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lipstick1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lipstick2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C1477C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldTube" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Luxury box -->
+  <rect x="50" y="80" width="200" height="140" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="2"/>
+  <rect x="55" y="85" width="190" height="130" rx="6" fill="#000" opacity="0.8"/>
+  
+  <!-- Box interior -->
+  <rect x="60" y="95" width="180" height="110" rx="4" fill="#8B008B" opacity="0.3"/>
+  
+  <!-- Lipstick tubes -->
+  <rect x="80" y="120" width="15" height="60" rx="2" fill="url(#goldTube)" stroke="#B8860B" stroke-width="1"/>
+  <rect x="105" y="120" width="15" height="60" rx="2" fill="url(#goldTube)" stroke="#B8860B" stroke-width="1"/>
+  <rect x="130" y="120" width="15" height="60" rx="2" fill="url(#goldTube)" stroke="#B8860B" stroke-width="1"/>
+  <rect x="155" y="120" width="15" height="60" rx="2" fill="url(#goldTube)" stroke="#B8860B" stroke-width="1"/>
+  <rect x="180" y="120" width="15" height="60" rx="2" fill="url(#goldTube)" stroke="#B8860B" stroke-width="1"/>
+  
+  <!-- Lipstick tips -->
+  <rect x="83" y="110" width="9" height="15" rx="4" fill="url(#lipstick1)"/>
+  <rect x="108" y="110" width="9" height="15" rx="4" fill="url(#lipstick2)"/>
+  <rect x="133" y="110" width="9" height="15" rx="4" fill="#8B0000"/>
+  <rect x="158" y="110" width="9" height="15" rx="4" fill="#FF1493"/>
+  <rect x="183" y="110" width="9" height="15" rx="4" fill="#B22222"/>
+  
+  <!-- Brand label -->
+  <text x="150" y="200" text-anchor="middle" font-family="serif" font-size="12" fill="#FFD700">LUXURY</text>
+  <text x="150" y="215" text-anchor="middle" font-family="serif" font-size="8" fill="#C0C0C0">Collection</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="240" rx="100" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

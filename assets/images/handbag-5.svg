@@ -1,0 +1,39 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="structuredGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="handleGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main structured bag body -->
+  <rect x="70" y="130" width="160" height="120" rx="8" fill="url(#structuredGradient)" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Top handles -->
+  <rect x="100" y="120" width="100" height="8" rx="4" fill="url(#handleGradient2)"/>
+  <rect x="105" y="105" width="90" height="6" rx="3" fill="url(#handleGradient2)"/>
+  
+  <!-- Hardware details -->
+  <rect x="65" y="125" width="8" height="8" fill="#C0C0C0" rx="1"/>
+  <rect x="227" y="125" width="8" height="8" fill="#C0C0C0" rx="1"/>
+  <rect x="65" y="245" width="8" height="8" fill="#C0C0C0" rx="1"/>
+  <rect x="227" y="245" width="8" height="8" fill="#C0C0C0" rx="1"/>
+  
+  <!-- Front compartment -->
+  <rect x="80" y="160" width="140" height="70" rx="4" fill="none" stroke="#333333" stroke-width="1"/>
+  
+  <!-- Zipper -->
+  <rect x="140" y="125" width="20" height="4" fill="#C0C0C0" rx="1"/>
+  <circle cx="155" cy="127" r="1.5" fill="#808080"/>
+  
+  <!-- Professional stitching -->
+  <line x1="75" y1="135" x2="225" y2="135" stroke="#333333" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="75" y1="245" x2="225" y2="245" stroke="#333333" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="270" rx="80" ry="8" fill="#000000" opacity="0.3"/>
+</svg>

@@ -252,7 +252,7 @@ function createProductCard(product) {
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="card product-card h-100 shadow-sm">
                 <div class="product-image">
-                    <i class="${product.image}"></i>
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid" style="width: 100%; height: 200px; object-fit: contain;">
                     ${product.sale || hasDiscount ? `<span class="badge bg-danger product-badge">${discountPercent}% OFF</span>` : ''}
                     <div class="product-actions">
                         <button class="btn btn-light btn-sm" onclick="toggleWishlist(${product.id})" title="Add to Wishlist">
@@ -499,17 +499,17 @@ function displayProductDetail(product) {
     container.innerHTML = `
         <div class="col-lg-6">
             <div class="product-detail-image">
-                <i class="${product.image}"></i>
+                <img src="${product.image}" alt="${product.name}" class="img-fluid" style="width: 100%; height: 400px; object-fit: contain;">
             </div>
             <div class="product-thumbnails">
                 <div class="product-thumbnail active">
-                    <i class="${product.image}"></i>
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid" style="width: 100%; height: 80px; object-fit: contain;">
                 </div>
                 <div class="product-thumbnail">
-                    <i class="${product.image}"></i>
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid" style="width: 100%; height: 80px; object-fit: contain;">
                 </div>
                 <div class="product-thumbnail">
-                    <i class="${product.image}"></i>
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid" style="width: 100%; height: 80px; object-fit: contain;">
                 </div>
             </div>
         </div>

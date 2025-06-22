@@ -1,0 +1,75 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardiganGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#800080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cardigan body -->
+  <rect x="90" y="120" width="120" height="120" rx="8" fill="url(#cardiganGradient)" stroke="#4B0082" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <rect x="55" y="120" width="40" height="100" rx="6" fill="url(#cardiganGradient)" stroke="#4B0082" stroke-width="2"/>
+  <rect x="205" y="120" width="40" height="100" rx="6" fill="url(#cardiganGradient)" stroke="#4B0082" stroke-width="2"/>
+  
+  <!-- Front opening -->
+  <line x1="150" y1="120" x2="150" y2="240" stroke="#4B0082" stroke-width="3"/>
+  
+  <!-- Button bands -->
+  <rect x="140" y="120" width="8" height="120" fill="#663399"/>
+  <rect x="152" y="120" width="8" height="120" fill="#663399"/>
+  
+  <!-- Buttons -->
+  <circle cx="144" cy="140" r="3" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="144" cy="165" r="3" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="144" cy="190" r="3" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  <circle cx="144" cy="215" r="3" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Button holes -->
+  <line x1="156" y1="140" x2="162" y2="140" stroke="#4B0082" stroke-width="1"/>
+  <line x1="156" y1="165" x2="162" y2="165" stroke="#4B0082" stroke-width="1"/>
+  <line x1="156" y1="190" x2="162" y2="190" stroke="#4B0082" stroke-width="1"/>
+  <line x1="156" y1="215" x2="162" y2="215" stroke="#4B0082" stroke-width="1"/>
+  
+  <!-- V-neck -->
+  <path d="M140 120 L150 135 L160 120" fill="none" stroke="#4B0082" stroke-width="2"/>
+  
+  <!-- Ribbed cuffs -->
+  <rect x="55" y="210" width="40" height="10" fill="#663399" stroke="#4B0082" stroke-width="1"/>
+  <rect x="205" y="210" width="40" height="10" fill="#663399" stroke="#4B0082" stroke-width="1"/>
+  
+  <!-- Ribbed texture lines on cuffs -->
+  <line x1="60" y1="212" x2="90" y2="212" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="60" y1="215" x2="90" y2="215" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="60" y1="218" x2="90" y2="218" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="210" y1="212" x2="240" y2="212" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="210" y1="215" x2="240" y2="215" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="210" y1="218" x2="240" y2="218" stroke="#4B0082" stroke-width="0.5"/>
+  
+  <!-- Ribbed hem -->
+  <rect x="90" y="235" width="120" height="8" fill="#663399" stroke="#4B0082" stroke-width="1"/>
+  <line x1="95" y1="237" x2="205" y2="237" stroke="#4B0082" stroke-width="0.5"/>
+  <line x1="95" y1="240" x2="205" y2="240" stroke="#4B0082" stroke-width="0.5"/>
+  
+  <!-- Knit texture -->
+  <circle cx="110" cy="140" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="130" cy="155" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="170" cy="145" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="190" cy="165" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="115" cy="185" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="175" cy="195" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="120" cy="210" r="1" fill="#9370DB" opacity="0.6"/>
+  <circle cx="180" cy="205" r="1" fill="#9370DB" opacity="0.6"/>
+  
+  <!-- Pockets -->
+  <rect x="100" y="180" width="25" height="20" rx="3" fill="none" stroke="#4B0082" stroke-width="1"/>
+  <rect x="175" y="180" width="25" height="20" rx="3" fill="none" stroke="#4B0082" stroke-width="1"/>
+  
+  <!-- Side seams -->
+  <line x1="95" y1="125" x2="95" y2="235" stroke="#4B0082" stroke-width="1" opacity="0.5"/>
+  <line x1="205" y1="125" x2="205" y2="235" stroke="#4B0082" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="260" rx="75" ry="8" fill="#000000" opacity="0.2"/>
+</svg>

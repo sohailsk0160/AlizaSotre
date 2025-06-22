@@ -37,6 +37,12 @@ ALiza Store is a modern e-commerce platform for fashion and lifestyle products. 
 - **cart.html**: Shopping cart management
 - **checkout.html**: Order completion and payment
 
+### Product Categories
+- **Hand Bags**: Luxury leather totes, crossbody bags, backpack purses, evening clutches, shoulder bags, and bucket bags
+- **Beauty Products**: Face serums, lipstick sets, night creams, eyeshadow palettes, cleansers, and mascara/eyeliner duos
+- **Kid Toys**: Educational building blocks, plush teddy bears, learning tablets, wooden puzzles, remote control cars, and art & craft sets
+- **Clothes**: Cotton t-shirts, denim jackets, dress shirts, jeans, silk blouses, and cardigan sweaters
+
 ### JavaScript Modules
 - **main.js**: Core application logic and product management
 - **cart.js**: Shopping cart functionality and localStorage operations
@@ -93,6 +99,7 @@ ALiza Store is a modern e-commerce platform for fashion and lifestyle products. 
 Changelog:
 - June 22, 2025: Initial setup
 - June 22, 2025: Rebranded to ALiza Store with dark/light theme system
+- June 22, 2025: Added 4 main product categories with custom SVG images and reorganized product catalog
 ```
 
 ## User Preferences

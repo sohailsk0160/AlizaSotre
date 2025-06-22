@@ -1,0 +1,53 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="silkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB6C1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Blouse body -->
+  <path d="M85 120 L215 120 L210 220 L90 220 Z" fill="url(#silkGradient)" stroke="#FFB6C1" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <path d="M60 120 L85 120 L85 180 L65 180 Q50 150 60 120" fill="url(#silkGradient)" stroke="#FFB6C1" stroke-width="2"/>
+  <path d="M215 120 L240 120 Q250 150 235 180 L215 180 L215 120" fill="url(#silkGradient)" stroke="#FFB6C1" stroke-width="2"/>
+  
+  <!-- Neckline -->
+  <path d="M125 120 Q150 95 175 120" fill="none" stroke="#FFB6C1" stroke-width="3"/>
+  
+  <!-- V-neck detail -->
+  <path d="M135 120 Q150 110 165 120" fill="none" stroke="#FFB6C1" stroke-width="2"/>
+  
+  <!-- Drape lines -->
+  <path d="M90 130 Q110 140 90 150" fill="none" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <path d="M210 130 Q190 140 210 150" fill="none" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <path d="M95 160 Q120 170 95 180" fill="none" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  <path d="M205 160 Q180 170 205 180" fill="none" stroke="#FF91A4" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Flowing hem -->
+  <path d="M90 220 Q120 230 150 225 Q180 230 210 220" fill="none" stroke="#FFB6C1" stroke-width="2"/>
+  
+  <!-- Silk texture shimmer -->
+  <ellipse cx="130" cy="150" rx="15" ry="8" fill="#FFFFFF" opacity="0.3"/>
+  <ellipse cx="170" cy="160" rx="12" ry="6" fill="#FFFFFF" opacity="0.2"/>
+  <ellipse cx="110" cy="180" rx="10" ry="5" fill="#FFFFFF" opacity="0.25"/>
+  <ellipse cx="190" cy="185" rx="8" ry="4" fill="#FFFFFF" opacity="0.2"/>
+  
+  <!-- Sleeve cuffs -->
+  <rect x="60" y="175" width="25" height="8" fill="#FF91A4" stroke="#FFB6C1" stroke-width="1"/>
+  <rect x="215" y="175" width="25" height="8" fill="#FF91A4" stroke="#FFB6C1" stroke-width="1"/>
+  
+  <!-- Button placket (hidden) -->
+  <line x1="150" y1="120" x2="150" y2="160" stroke="#FF91A4" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Collar detail -->
+  <path d="M125 115 L135 105 L165 105 L175 115" fill="none" stroke="#FFB6C1" stroke-width="2"/>
+  
+  <!-- Elegant draping -->
+  <path d="M100 140 Q150 150 200 140" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  <path d="M105 170 Q150 180 195 170" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="250" rx="70" ry="8" fill="#000000" opacity="0.15"/>
+</svg>

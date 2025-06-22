@@ -1,0 +1,71 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shirtGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dress shirt body -->
+  <rect x="90" y="120" width="120" height="130" rx="6" fill="url(#shirtGradient2)" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <rect x="60" y="120" width="35" height="90" rx="4" fill="url(#shirtGradient2)" stroke="#E0E0E0" stroke-width="2"/>
+  <rect x="205" y="120" width="35" height="90" rx="4" fill="url(#shirtGradient2)" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Collar -->
+  <path d="M90 120 L100 105 L150 105 L150 100 L150 105 L200 105 L210 120" fill="url(#shirtGradient2)" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Collar points -->
+  <path d="M100 105 L105 115 L95 120" fill="#E0E0E0" stroke="#D0D0D0" stroke-width="1"/>
+  <path d="M200 105 L195 115 L205 120" fill="#E0E0E0" stroke="#D0D0D0" stroke-width="1"/>
+  
+  <!-- Button placket -->
+  <rect x="145" y="120" width="10" height="130" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Buttons -->
+  <circle cx="150" cy="130" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="150" cy="150" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="150" cy="170" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="150" cy="190" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="150" cy="210" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="150" cy="230" r="3" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Button holes -->
+  <line x1="158" y1="130" x2="165" y2="130" stroke="#C0C0C0" stroke-width="1"/>
+  <line x1="158" y1="150" x2="165" y2="150" stroke="#C0C0C0" stroke-width="1"/>
+  <line x1="158" y1="170" x2="165" y2="170" stroke="#C0C0C0" stroke-width="1"/>
+  <line x1="158" y1="190" x2="165" y2="190" stroke="#C0C0C0" stroke-width="1"/>
+  <line x1="158" y1="210" x2="165" y2="210" stroke="#C0C0C0" stroke-width="1"/>
+  <line x1="158" y1="230" x2="165" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Chest pocket -->
+  <rect x="110" y="140" width="20" height="18" rx="2" fill="none" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="115" y1="140" x2="125" y2="140" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Cuffs -->
+  <rect x="60" y="200" width="35" height="10" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="205" y="200" width="35" height="10" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Cuff buttons -->
+  <circle cx="67" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="77" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="87" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="213" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="223" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="233" cy="205" r="2" fill="#FFFFFF" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Side seams -->
+  <line x1="95" y1="125" x2="95" y2="245" stroke="#E0E0E0" stroke-width="1" opacity="0.5"/>
+  <line x1="205" y1="125" x2="205" y2="245" stroke="#E0E0E0" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Shirt tail -->
+  <path d="M90 250 Q150 260 210 250" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- French seams -->
+  <line x1="65" y1="125" x2="65" y2="205" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="1,2"/>
+  <line x1="235" y1="125" x2="235" y2="205" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="1,2"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="270" rx="70" ry="8" fill="#000000" opacity="0.1"/>
+</svg>
